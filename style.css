@@ -1,19 +1,153 @@
 body,
 html {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #ffe4b5;
+  scroll-behavior: smooth;
+
+
+}
+
+.First {
+  height: 100%;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("images/watercolor-5935815_1920.png");
+  animation: backgrnd 5s infinite;
+
+}
+
+@keyframes backgrnd {
+  0% {
+    background-image: url("images/watercolor-5935815_1920.png");
+  }
+
+  50% {
+    background-image: url("images/watercolor-6013323_1920.png");
+  }
+
+  100% {
+    background-image: url("images/watercolor-6013286_1920.png");
+  }
+
+}
+
+
+.bg-image {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
+
+}
+
+a:link,
+a:visited {
+  background: transparent;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bg-image .scroll {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(248, 175, 242);
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0.3, .9);
 
 }
 
 
 
+.bg-image .scroll:hover {
+  background-color: violet;
+}
 
-.container {
+
+
+/*
+
+.img1 {
+  background: url("images/Untitled3.jpg");
+}
+
+.img2 {
+  background-image: url("images/abstract-6353624_1920.png");
+}
+
+.img3 {
+  background-image: url("images/abstract-6353626_1920.png");
+}
+
+.img4 {
+  background-image: url("images/abstract-6353627_1920.png");
+}
+
+.img5 {
+  background-image: url("images/avatar-3925524_1920.png");
+}
+
+.img6 {
+  background-image: url("images/16.jpg");
+}
+*/
+
+.bg-text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 10px solid #f1f1f1;
+  position: relative;
+  /* Stay fixed */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  padding: 0px 70px;
+  text-align: center;
+
+}
+
+.bg-text h1 {
+  margin-bottom: -6px;
+
+}
+
+.bg-text p {
+  margin-top: -6px;
+  color: #fff;
+  padding-bottom: 40%;
+  text-align: right;
+}
+
+
+
+
+#container {
   width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(238, 137, 42, 0.911), rgba(250, 246, 246, 0.3)), url("images/16.jpg");
+  background-image: linear-gradient(rgba(238, 137, 42, 0.911), rgba(250, 246, 246, 0.3)), url("images/img1.png.png");
   background-size: 100% 100%;
   color: #fff;
   position: relative;
@@ -22,18 +156,19 @@ html {
 
 
 .navbar {
-  margin-left: 900px;
-  font-weight: 1000;
+  padding-left: 450px;
+  padding-right: 450px;
+  font-weight: 700;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   font-family: "be vietnam";
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(4, 1fr 1fr 1fr 1fr 1fr 1fr);
-
-
+  grid-template-columns: repeat(5, 1fr);
   padding-top: 30px;
+  padding-bottom: 2em;
   grid-gap: 15px;
+
 }
 
 
@@ -49,17 +184,18 @@ a {
 
 .nav-link {
   text-align: center;
-  padding: 10px 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 40px;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  border-radius: 30px;
+
 }
 
 .nav-link {
-  background-color: wheat;
+  background: rgba(0, 0, 0, 0.5);
   transition: transform .3s;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0.3, .9);
 }
 
 /*#loginbtn {
@@ -77,7 +213,7 @@ a {
 .nav-link:hover {
   background-color: rgb(184, 89, 11);
   cursor: pointer;
-  transform: translateY(6px);
+  transform: translateY(8px);
 }
 
 
@@ -96,29 +232,29 @@ a {
   border-color: rgb(153, 177, 204);
   border-width: 11px;
   border-radius: 40px;
-  background: url("images/10.jpg");
+  background: url("images/Untitled.jpg");
   background-size: 100% 100%;
   animation: slide 20s infinite;
 }
 
 @keyframes slide {
   25% {
-    background: url("images/11.jpg");
+    background: url("images/Untitled1.jpg");
     background-size: 100% 100%;
   }
 
   50% {
-    background: url("images/12.jpg");
+    background: url("images/Untitled2.jpg");
     background-size: 100% 100%;
   }
 
   75% {
-    background: url("images/13.jpg");
+    background: url("images/Untitled3.jpg");
     background-size: 100% 100%;
   }
 
   100% {
-    background: url("images/14.jpg");
+    background: url("images/Untitled4.jpg");
     background-size: 100% 100%;
   }
 
@@ -139,14 +275,44 @@ a {
 
 }
 
+#about_pg {
+  font-family: 'Comic Sans MS', 'Courier New', Courier, monospace;
+  text-align: center;
+  font-style: italic;
+  font-size: 120px;
+  font-weight: 700;
+
+}
+
+#about_pg img {
+  width: 48%;
+  height: 4em;
+  position: relative;
+  left: 0.5em;
+  top: 8em;
+  bottom: 60%;
+
+}
 
 
-.image {
 
-  background-image: url("images/abstract-6353626_1920.png");
+#about_pg p {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 3em;
+
+
+}
+
+
+
+#image {
+
+  background-image: url("images/abstract-6353624_1920.png");
   position: relative;
   height: 100%;
   overflow: hidden;
+
 
 }
 
@@ -164,12 +330,12 @@ a {
 
 
 .formBox {
-  width: 380px;
-  height: 480px;
+  width: 880px;
+  height: 780px;
   position: relative;
   margin: 2% auto;
   border-radius: 30px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   padding: 10px;
   overflow: hidden;
 
@@ -284,7 +450,7 @@ span {
   padding-top: 0%;
   width: 100%;
   min-height: 100%;
-  background-image: url("images/ab1.png");
+  background-image: url("images/abstract-6353627_1920.png");
   background-size: 100% 100%;
   position: relative;
 
@@ -303,7 +469,7 @@ span {
 .img_heart img {
   width: 1400px;
   padding: 0%;
-  animation: heart 3s linear 1;
+  animation: heart 7s linear infinite;
 
 }
 
@@ -428,9 +594,10 @@ p {
 }
 
 
-#contact select{
+#contact select {
   margin-left: 2em;
 }
+
 #contact option {
   padding: 6% 6%;
   padding-left: 1em;
@@ -440,10 +607,10 @@ p {
   font-family: 'Times New Roman', Times, serif;
   color: rgb(122, 117, 117);
   border: none;
-  
+
 }
 
-#contact button{
+#contact button {
   margin-top: 5em;
 }
 
