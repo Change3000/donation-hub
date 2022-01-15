@@ -1,53 +1,22 @@
+const imgfile = document.getElementById("imgfile");
+const previewContainer = document.getElementById("imagePreview");
+const previewImage = previewContainer.querySelector('.image-preview__image');
+const previewDefaultText = previewContainer.querySelector('image-preview__default-text');
 
-                            var x= document.getElementsById("login");
-                             var y = document.getElementsById("register");
-                              var z= document.getElementsById("btn");
-                            function register()
-                            {
-                                x.style.left='-400px';
-                                y.style.left='50px';
-                                z.style.left='110px';
-                            
-                            } 
-                            function login()
-                            {
-                                x.style.left = '50px';
-                                y.style.left = '450px';
-                                z.style.left = '0px';
-                            }
-                        
-                
-                            var modal= document.getElementsById('loginForm');
-                            window.onclick= function(event)
-                            {
-                                if(event.target==modal)
-                                {
-                                    modal.style.display="none";
-                                }
-                            }
-var slideIndex = 1;
-showSlides(slideIndex);
+imgfile.addEventListener('change', function () {
+    const file = this.files[0];
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
+    if (file) {
+        const reader = new fileReader();
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
+        previewDefaultText.style.display = 'none';
+        previewImage.style.display = 'block';
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        reader.addEventListener('load', function () {
+            console.log(this);
+            previewImage.setAttribute('src', this.result);
+        });
+
+        reader.readAsDataURL(file);
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
+})

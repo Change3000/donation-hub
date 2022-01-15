@@ -1,0 +1,562 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    scroll-behavior: smooth;
+
+
+}
+
+.First {
+    height: 100%;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("images/watercolor-5935815_1920.png");
+    animation: backgrnd 5s infinite;
+
+}
+
+@keyframes backgrnd {
+    0% {
+        background-image: url("images/watercolor-5935815_1920.png");
+    }
+
+    50% {
+        background-image: url("images/watercolor-6013323_1920.png");
+    }
+
+    100% {
+        background-image: url("images/watercolor-6013286_1920.png");
+    }
+
+}
+
+
+.bg-image {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: 100% 100%;
+
+}
+
+a:link,
+a:visited {
+    background: transparent;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bg-image .scroll {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(248, 175, 242);
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0.3, .9);
+
+}
+
+
+
+.bg-image .scroll:hover {
+    background-color: violet;
+}
+
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 10px solid #f1f1f1;
+    position: relative;
+    /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 0px 70px;
+    text-align: center;
+
+}
+
+.bg-text h1 {
+    margin-bottom: -6px;
+
+}
+
+.bg-text p {
+    margin-top: -6px;
+    color: #fff;
+    padding-bottom: 40%;
+    text-align: right;
+}
+
+
+.two {
+    background-image: url("images/frontpg02.png");
+    height: auto;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#bePart {
+    top: 3%;
+    left: 20%;
+    font-family: 'Comic Sans MS', 'Courier New', Courier, monospace;
+    text-align: center;
+    font-style: italic;
+    color: #000;
+    font-size: 130px;
+    font-weight: 700;
+    position: absolute;
+}
+
+#login-form {
+    display: flex;
+}
+
+
+.formBox {
+    top: 30%;
+    left: 20%;
+    width: 880px;
+    height: 750px;
+    position: absolute;
+    margin: 2% auto;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    overflow: hidden;
+
+}
+
+.buttonBox {
+    width: 220px;
+    margin: 35px auto;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: #F3C693;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.input-group-login {
+    top: 150px;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-group-register {
+    top: 120px;
+    width: 280px;
+    transition: .5s;
+}
+
+
+.input-field {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #F3C693;
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+.check-box {
+    margin: 30px 10px 34px 0;
+}
+
+span {
+
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    transition: .5s;
+
+}
+
+#login {
+    left: 50px;
+}
+
+#login input {
+    color: white;
+    font-size: 15;
+}
+
+#register {
+    left: 450px;
+}
+
+#register input {
+    color: white;
+    font-size: 15;
+}
+
+
+
+
+.third {
+    background-image: url("images/bg3.png");
+    width: 100%;
+    height: 200%;
+    background-size: cover;
+    position: relative;
+
+}
+
+#joyOfGiving {
+    position: absolute;
+    top: 3%;
+    left: 27%;
+    font-size: 100px;
+    color: #000;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+
+}
+
+
+.form2 {
+    position: absolute;
+    width: 700px;
+    height: 1400px;
+    top: 18%;
+    left: 29%;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 6px;
+
+}
+
+.loc-logo {
+    width: 10%;
+    height: 6.2%;
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    border-radius: 0px;
+    background: url("images/location-icon-png-4240.png");
+    background-size: 5em;
+
+}
+
+.input-location {
+    top: 150px;
+    left: 6%;
+    position: absolute;
+    width: 280px;
+
+}
+
+#location input {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.contact-logo {
+    width: 20%;
+    height: 11%;
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    border-radius: 0px;
+    background: url("images/contact-icon-png-4071.png");
+    background-size: 8em;
+}
+
+.input-contact {
+    top: 790px;
+    left: 6%;
+    position: absolute;
+    width: 280px;
+
+}
+
+#contact input {
+    font-size: 20px;
+    padding: 10% 10%;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+
+}
+
+p {
+    margin-left: 1em;
+    color: #777;
+    font-size: 20px;
+
+}
+
+
+#contact select {
+    margin-left: 2em;
+}
+
+#contact option {
+    padding: 6% 6%;
+    padding-left: 1em;
+    padding-bottom: 18%;
+    background-color: #999;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(122, 117, 117);
+    border: none;
+
+}
+
+#contact button {
+    margin-top: 5em;
+}
+
+
+.fourth {
+    background-image: url("images/6543234567890.png");
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+
+
+}
+
+
+div.slideImages img {
+    margin: 28px;
+    margin-top: 6em;
+    border: 10px solid rgb(7, 7, 7);
+    border-radius: 30px;
+    float: left;
+
+}
+
+.slideImages p {
+    margin-top: 10em;
+    padding: 6em;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+#gallery {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#gallery>* {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    animation: 12s autoplay1 infinite ease-in-out
+}
+
+@keyframes autoplay1 {
+    0% {
+        top: 100%;
+    }
+
+    4% {
+        top: 0%;
+    }
+
+    33.33% {
+        top: 0%;
+    }
+
+    37.33% {
+        top: -100%;
+    }
+
+    100% {
+        top: -100%;
+    }
+}
+
+#gallery>*:nth-child(1) {
+    animation-delay: 0s
+}
+
+#gallery>*:nth-child(2) {
+    animation-delay: 4s
+}
+
+#gallery>*:nth-child(3) {
+    animation-delay: 8s
+}
+
+#teaminfo {
+    position: relative;
+}
+
+#teaminfo img {
+    margin-top: 4%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#teaminfo p1 {
+    color: rgb(17, 32, 99);
+    position: absolute;
+    bottom: 73%;
+    left: 37%;
+    font-size: 110px;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: end;
+
+
+}
+
+#teaminfo p2 {
+    color: rgb(3, 3, 3);
+    position: absolute;
+    bottom: 23%;
+    left: 11%;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#teaminfo p3 {
+    color: rgb(17, 32, 99);
+    position: absolute;
+    bottom: 23%;
+    left: 43%;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#teaminfo p4 {
+    color: rgb(245, 123, 9);
+    position: absolute;
+    bottom: 23%;
+    left: 73%;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.team {
+    position: absolute;
+    bottom: 31%;
+    left: 1%;
+    right: 1%;
+    padding-left: 7%;
+
+}
+
+.team img {
+    margin-right: 6em;
+    border: 10px solid rgb(7, 7, 7);
+    border-radius: 50%;
+}
+
+.thirdPage{ 
+  width: 100%;
+  min-height: 100%;
+
+  background-size: 100% 100%;
+  position: relative;
+
+}
+.image {
+
+  position: relative;
+  overflow: hidden;
+}
+
+
+.image__overlay {
+  position: absolute;
+  display:flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.image__overlay>* {
+  transform: translateY(20px);
+  transition: transform 0.2s;
+
+}
+
+.image__overlay:hover {
+  opacity: 1;
+}
+
+.image__overlay:hover>* {
+  transform: translateY(0);
+}
